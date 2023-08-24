@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
     <meta charset="UTF-8">
@@ -17,6 +17,20 @@
 </head>
 
 <body>
+    <progress aria-hidden="true" id="progress-bar" class="position-sticky top-0 z-index2" max="100" value="0">
+    </progress>
+    <div class="position-fixed z-index2 d-none">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <canvas class="top-0 start-0 d-block" id="Canvas1" width="500" height="500"
+                    style="border:1px solid #000000;"></canvas>
+            </div>
+            <div class="col-12 col-lg-6">
+
+            </div>
+        </div>
+        <button id="clearButton" class="button1 mt-5">Clear</button>
+    </div>
     <div class="container-fluid">
         <div id="container">
             <div class="blue">
@@ -42,54 +56,407 @@
             </div>
         </div>
         <div class="container">
-            <div class="row mx-0 my-4 imgMagic">
-                <div class="col-12 col-md-6 col-lg-3 px-3">
-                    <div class="py-3">
-                        <img class="w-100 h-100 rounded" src="images/sky1.jpg" alt="">
-                        <a target="_blank" href="#"
-                            class="takip-cismi text-decoration-none d-flex justify-content-center align-items-center">
-                            View
-                        </a>
+            <div class="d-flex flex-wrap">
+                <div class="containercik m-3">
+                    <div class="canvas">
+                        <div class="tracker tr-1"></div>
+                        <div class="tracker tr-2"></div>
+                        <div class="tracker tr-3"></div>
+                        <div class="tracker tr-4"></div>
+                        <div class="tracker tr-5"></div>
+                        <div class="tracker tr-6"></div>
+                        <div class="tracker tr-7"></div>
+                        <div class="tracker tr-8"></div>
+                        <div class="tracker tr-9"></div>
+                        <div class="tracker tr-10"></div>
+                        <div class="tracker tr-11"></div>
+                        <div class="tracker tr-12"></div>
+                        <div class="tracker tr-13"></div>
+                        <div class="tracker tr-14"></div>
+                        <div class="tracker tr-15"></div>
+                        <div class="tracker tr-16"></div>
+                        <div class="tracker tr-17"></div>
+                        <div class="tracker tr-18"></div>
+                        <div class="tracker tr-19"></div>
+                        <div class="tracker tr-20"></div>
+                        <div class="tracker tr-21"></div>
+                        <div class="tracker tr-22"></div>
+                        <div class="tracker tr-23"></div>
+                        <div class="tracker tr-24"></div>
+                        <div class="tracker tr-25"></div>
+                        <div id="card">
+                            <p id="prompt">HOVER OVER :D</p>
+                            <img class="w-100 h-100 br20px transitin05s " src="images/sky1.jpg" alt="">
+
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 px-3">
-                    <div class="py-3">
-                        <img class="w-100 h-100 rounded" src="images/sky2.jpg" alt="">
+                <div class="containercik m-3">
+                    <div class="canvas">
+                        <div class="tracker tr-1"></div>
+                        <div class="tracker tr-2"></div>
+                        <div class="tracker tr-3"></div>
+                        <div class="tracker tr-4"></div>
+                        <div class="tracker tr-5"></div>
+                        <div class="tracker tr-6"></div>
+                        <div class="tracker tr-7"></div>
+                        <div class="tracker tr-8"></div>
+                        <div class="tracker tr-9"></div>
+                        <div class="tracker tr-10"></div>
+                        <div class="tracker tr-11"></div>
+                        <div class="tracker tr-12"></div>
+                        <div class="tracker tr-13"></div>
+                        <div class="tracker tr-14"></div>
+                        <div class="tracker tr-15"></div>
+                        <div class="tracker tr-16"></div>
+                        <div class="tracker tr-17"></div>
+                        <div class="tracker tr-18"></div>
+                        <div class="tracker tr-19"></div>
+                        <div class="tracker tr-20"></div>
+                        <div class="tracker tr-21"></div>
+                        <div class="tracker tr-22"></div>
+                        <div class="tracker tr-23"></div>
+                        <div class="tracker tr-24"></div>
+                        <div class="tracker tr-25"></div>
+                        <div id="card">
+                            <p id="prompt">HOVER OVER :D</p>
+                            <img class="w-100 h-100 br20px transitin05s " src="images/sky2.jpg" alt="">
+
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 px-3">
-                    <div class="py-3">
-                        <img class="w-100 h-100 rounded" src="images/sky3.jpg" alt="">
+                <div class="containercik m-3">
+                    <div class="canvas">
+                        <div class="tracker tr-1"></div>
+                        <div class="tracker tr-2"></div>
+                        <div class="tracker tr-3"></div>
+                        <div class="tracker tr-4"></div>
+                        <div class="tracker tr-5"></div>
+                        <div class="tracker tr-6"></div>
+                        <div class="tracker tr-7"></div>
+                        <div class="tracker tr-8"></div>
+                        <div class="tracker tr-9"></div>
+                        <div class="tracker tr-10"></div>
+                        <div class="tracker tr-11"></div>
+                        <div class="tracker tr-12"></div>
+                        <div class="tracker tr-13"></div>
+                        <div class="tracker tr-14"></div>
+                        <div class="tracker tr-15"></div>
+                        <div class="tracker tr-16"></div>
+                        <div class="tracker tr-17"></div>
+                        <div class="tracker tr-18"></div>
+                        <div class="tracker tr-19"></div>
+                        <div class="tracker tr-20"></div>
+                        <div class="tracker tr-21"></div>
+                        <div class="tracker tr-22"></div>
+                        <div class="tracker tr-23"></div>
+                        <div class="tracker tr-24"></div>
+                        <div class="tracker tr-25"></div>
+                        <div id="card">
+                            <p id="prompt">HOVER OVER :D</p>
+                            <img class="w-100 h-100 br20px transitin05s " src="images/sky3.jpg" alt="">
+
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 px-3">
-                    <div class="py-3">
-                        <img class="w-100 h-100 rounded" src="images/sky4.jpg" alt="">
+                <div class="containercik m-3">
+                    <div class="canvas">
+                        <div class="tracker tr-1"></div>
+                        <div class="tracker tr-2"></div>
+                        <div class="tracker tr-3"></div>
+                        <div class="tracker tr-4"></div>
+                        <div class="tracker tr-5"></div>
+                        <div class="tracker tr-6"></div>
+                        <div class="tracker tr-7"></div>
+                        <div class="tracker tr-8"></div>
+                        <div class="tracker tr-9"></div>
+                        <div class="tracker tr-10"></div>
+                        <div class="tracker tr-11"></div>
+                        <div class="tracker tr-12"></div>
+                        <div class="tracker tr-13"></div>
+                        <div class="tracker tr-14"></div>
+                        <div class="tracker tr-15"></div>
+                        <div class="tracker tr-16"></div>
+                        <div class="tracker tr-17"></div>
+                        <div class="tracker tr-18"></div>
+                        <div class="tracker tr-19"></div>
+                        <div class="tracker tr-20"></div>
+                        <div class="tracker tr-21"></div>
+                        <div class="tracker tr-22"></div>
+                        <div class="tracker tr-23"></div>
+                        <div class="tracker tr-24"></div>
+                        <div class="tracker tr-25"></div>
+                        <div id="card">
+                            <p id="prompt">HOVER OVER :D</p>
+                            <img class="w-100 h-100 br20px transitin05s " src="images/sky4.jpg" alt="">
+
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 px-3">
-                    <div class="py-3 h-100">
-                        <img class="w-100 h-100 rounded" src="images/sky5.jpg" alt="">
+                <div class="containercik m-3">
+                    <div class="canvas">
+                        <div class="tracker tr-1"></div>
+                        <div class="tracker tr-2"></div>
+                        <div class="tracker tr-3"></div>
+                        <div class="tracker tr-4"></div>
+                        <div class="tracker tr-5"></div>
+                        <div class="tracker tr-6"></div>
+                        <div class="tracker tr-7"></div>
+                        <div class="tracker tr-8"></div>
+                        <div class="tracker tr-9"></div>
+                        <div class="tracker tr-10"></div>
+                        <div class="tracker tr-11"></div>
+                        <div class="tracker tr-12"></div>
+                        <div class="tracker tr-13"></div>
+                        <div class="tracker tr-14"></div>
+                        <div class="tracker tr-15"></div>
+                        <div class="tracker tr-16"></div>
+                        <div class="tracker tr-17"></div>
+                        <div class="tracker tr-18"></div>
+                        <div class="tracker tr-19"></div>
+                        <div class="tracker tr-20"></div>
+                        <div class="tracker tr-21"></div>
+                        <div class="tracker tr-22"></div>
+                        <div class="tracker tr-23"></div>
+                        <div class="tracker tr-24"></div>
+                        <div class="tracker tr-25"></div>
+                        <div id="card">
+                            <p id="prompt">HOVER OVER :D</p>
+                            <img class="w-100 h-100 br20px transitin05s " src="images/sky5.jpg" alt="">
+
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 px-3">
-                    <div class="py-3">
-                        <img class="w-100 h-100 rounded" src="images/sky6.jpg" alt="">
+                <div class="containercik m-3">
+                    <div class="canvas">
+                        <div class="tracker tr-1"></div>
+                        <div class="tracker tr-2"></div>
+                        <div class="tracker tr-3"></div>
+                        <div class="tracker tr-4"></div>
+                        <div class="tracker tr-5"></div>
+                        <div class="tracker tr-6"></div>
+                        <div class="tracker tr-7"></div>
+                        <div class="tracker tr-8"></div>
+                        <div class="tracker tr-9"></div>
+                        <div class="tracker tr-10"></div>
+                        <div class="tracker tr-11"></div>
+                        <div class="tracker tr-12"></div>
+                        <div class="tracker tr-13"></div>
+                        <div class="tracker tr-14"></div>
+                        <div class="tracker tr-15"></div>
+                        <div class="tracker tr-16"></div>
+                        <div class="tracker tr-17"></div>
+                        <div class="tracker tr-18"></div>
+                        <div class="tracker tr-19"></div>
+                        <div class="tracker tr-20"></div>
+                        <div class="tracker tr-21"></div>
+                        <div class="tracker tr-22"></div>
+                        <div class="tracker tr-23"></div>
+                        <div class="tracker tr-24"></div>
+                        <div class="tracker tr-25"></div>
+                        <div id="card">
+                            <p id="prompt">HOVER OVER :D</p>
+                            <img class="w-100 h-100 br20px transitin05s " src="images/sky6.jpg" alt="">
+
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 px-3">
-                    <div class="py-3">
-                        <img class="w-100 h-100 rounded" src="images/sky7.jpg" alt="">
+                <div class="containercik m-3">
+                    <div class="canvas">
+                        <div class="tracker tr-1"></div>
+                        <div class="tracker tr-2"></div>
+                        <div class="tracker tr-3"></div>
+                        <div class="tracker tr-4"></div>
+                        <div class="tracker tr-5"></div>
+                        <div class="tracker tr-6"></div>
+                        <div class="tracker tr-7"></div>
+                        <div class="tracker tr-8"></div>
+                        <div class="tracker tr-9"></div>
+                        <div class="tracker tr-10"></div>
+                        <div class="tracker tr-11"></div>
+                        <div class="tracker tr-12"></div>
+                        <div class="tracker tr-13"></div>
+                        <div class="tracker tr-14"></div>
+                        <div class="tracker tr-15"></div>
+                        <div class="tracker tr-16"></div>
+                        <div class="tracker tr-17"></div>
+                        <div class="tracker tr-18"></div>
+                        <div class="tracker tr-19"></div>
+                        <div class="tracker tr-20"></div>
+                        <div class="tracker tr-21"></div>
+                        <div class="tracker tr-22"></div>
+                        <div class="tracker tr-23"></div>
+                        <div class="tracker tr-24"></div>
+                        <div class="tracker tr-25"></div>
+                        <div id="card">
+                            <p id="prompt">HOVER OVER :D</p>
+                            <img class="w-100 h-100 br20px transitin05s " src="images/sky7.jpg" alt="">
+
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 px-3">
-                    <div class="py-3">
-                        <img class="w-100 h-100 rounded" src="images/sky8.jpg" alt="">
+                <div class="containercik m-3">
+                    <div class="canvas">
+                        <div class="tracker tr-1"></div>
+                        <div class="tracker tr-2"></div>
+                        <div class="tracker tr-3"></div>
+                        <div class="tracker tr-4"></div>
+                        <div class="tracker tr-5"></div>
+                        <div class="tracker tr-6"></div>
+                        <div class="tracker tr-7"></div>
+                        <div class="tracker tr-8"></div>
+                        <div class="tracker tr-9"></div>
+                        <div class="tracker tr-10"></div>
+                        <div class="tracker tr-11"></div>
+                        <div class="tracker tr-12"></div>
+                        <div class="tracker tr-13"></div>
+                        <div class="tracker tr-14"></div>
+                        <div class="tracker tr-15"></div>
+                        <div class="tracker tr-16"></div>
+                        <div class="tracker tr-17"></div>
+                        <div class="tracker tr-18"></div>
+                        <div class="tracker tr-19"></div>
+                        <div class="tracker tr-20"></div>
+                        <div class="tracker tr-21"></div>
+                        <div class="tracker tr-22"></div>
+                        <div class="tracker tr-23"></div>
+                        <div class="tracker tr-24"></div>
+                        <div class="tracker tr-25"></div>
+                        <div id="card">
+                            <p id="prompt">HOVER OVER :D</p>
+                            <img class="w-100 h-100 br20px transitin05s " src="images/sky8.jpg" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="containercik m-3">
+                    <div class="canvas">
+                        <div class="tracker tr-1"></div>
+                        <div class="tracker tr-2"></div>
+                        <div class="tracker tr-3"></div>
+                        <div class="tracker tr-4"></div>
+                        <div class="tracker tr-5"></div>
+                        <div class="tracker tr-6"></div>
+                        <div class="tracker tr-7"></div>
+                        <div class="tracker tr-8"></div>
+                        <div class="tracker tr-9"></div>
+                        <div class="tracker tr-10"></div>
+                        <div class="tracker tr-11"></div>
+                        <div class="tracker tr-12"></div>
+                        <div class="tracker tr-13"></div>
+                        <div class="tracker tr-14"></div>
+                        <div class="tracker tr-15"></div>
+                        <div class="tracker tr-16"></div>
+                        <div class="tracker tr-17"></div>
+                        <div class="tracker tr-18"></div>
+                        <div class="tracker tr-19"></div>
+                        <div class="tracker tr-20"></div>
+                        <div class="tracker tr-21"></div>
+                        <div class="tracker tr-22"></div>
+                        <div class="tracker tr-23"></div>
+                        <div class="tracker tr-24"></div>
+                        <div class="tracker tr-25"></div>
+                        <div id="card">
+                            <p id="prompt">HOVER OVER :D</p>
+                            <img class="w-100 h-100 br20px transitin05s " src="images/sky8.jpg" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="containercik m-3">
+                    <div class="canvas">
+                        <div class="tracker tr-1"></div>
+                        <div class="tracker tr-2"></div>
+                        <div class="tracker tr-3"></div>
+                        <div class="tracker tr-4"></div>
+                        <div class="tracker tr-5"></div>
+                        <div class="tracker tr-6"></div>
+                        <div class="tracker tr-7"></div>
+                        <div class="tracker tr-8"></div>
+                        <div class="tracker tr-9"></div>
+                        <div class="tracker tr-10"></div>
+                        <div class="tracker tr-11"></div>
+                        <div class="tracker tr-12"></div>
+                        <div class="tracker tr-13"></div>
+                        <div class="tracker tr-14"></div>
+                        <div class="tracker tr-15"></div>
+                        <div class="tracker tr-16"></div>
+                        <div class="tracker tr-17"></div>
+                        <div class="tracker tr-18"></div>
+                        <div class="tracker tr-19"></div>
+                        <div class="tracker tr-20"></div>
+                        <div class="tracker tr-21"></div>
+                        <div class="tracker tr-22"></div>
+                        <div class="tracker tr-23"></div>
+                        <div class="tracker tr-24"></div>
+                        <div class="tracker tr-25"></div>
+                        <div id="card">
+                            <p id="prompt">HOVER OVER :D</p>
+                            <img class="w-100 h-100 br20px transitin05s " src="images/sky6.jpg" alt="">
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+       
+        <div class="container">
+            <form id="user" class="lab_input w-25">
+                <input id="user_input" class="userid" type="text" required="required">
+                <span class="text_input" data-tooltip="User ID"></span>
+                <button id="usr_dele" class="btn_clear" type="reset" onclick="focus_id()">✕</button>
+            </form>
+            <form id="user" class="lab_input w-25">
+                <input id="pwd_input" class="userid" type="password" required="required">
+                <span class="text_input" data-tooltip="Password"></span>
+                <button id="usr_dele" class="btn_clear" type="reset" onclick="focus_pwd()">✕</button>
+            </form>
+        </div>
     </div>
+    <script type="text/javascript">
+        var canvas = document.getElementById("Canvas1");
+        var ctx = canvas.getContext('2d');
+        var beginPath = false;
+        var drawColor = "black"; // Çizgi rengi varsayılan olarak siyah
+
+        document.body.addEventListener('mousemove', function (event) {
+            var x = event.clientX - canvas.getBoundingClientRect().left;
+            var y = event.clientY - canvas.getBoundingClientRect().top;
+            if (beginPath) {
+                ctx.lineTo(x, y);
+                ctx.strokeStyle = drawColor; // Çizgi rengini ayarla
+                ctx.stroke();
+            } else {
+                ctx.beginPath();
+                ctx.moveTo(x, y);
+                beginPath = true;
+            }
+        }, false);
+        // Temizle düğmesine tıklanınca çalışacak işlev
+        document.getElementById("clearButton").addEventListener('click', function () {
+            ctx.clearRect(0, 0, canvas.width, canvas.height); // Canvas'ı temizle
+            beginPath = false; // Çizim yolumuzu sıfırla
+        });
+    </script>
+
+
+    <script>
+        focus_id = function getFocus() {
+            document.getElementById("user_input").focus();
+        }
+        focus_pwd = function getFocus() {
+            document.getElementById("pwd_input").focus();
+        }
+    </script>
+    <script>
+        // JavaScript ile sayfanın ilerlemesini takip edin ve progress barı güncelleyin
+        window.addEventListener('scroll', () => {
+            const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+            const scrolled = (scrollTop / (scrollHeight - window.innerHeight)) * 100;
+            document.getElementById('progress-bar').style.width = scrolled + '%';
+        });
+    </script>
     <script src="js/Aos.js"></script>
     <script src="js/Bootstrap5-1-3.js"></script>
     <script src="js/Jquary3-7-0.js"></script>
